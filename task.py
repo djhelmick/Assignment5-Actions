@@ -8,4 +8,4 @@ def area(radius):
 
 
 def firstAndLast(collection):
-    return (collection[0], collection[-1])
+    return [collection[0], collection[-1]]
