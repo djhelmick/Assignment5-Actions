@@ -1,3 +1,6 @@
+import datetime
+
+
 def firstrun():
     return "success"
 
@@ -9,3 +12,8 @@ def area(radius):
 
 def firstAndLast(collection):
     return [collection[0], collection[-1]]
+
+
+def dateDifference(date1, date2):
+    delta = date1 - date2
+    return delta.days

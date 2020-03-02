@@ -1,5 +1,6 @@
 import unittest
 import task
+import datetime
 
 
 class TestCase(unittest.TestCase):
@@ -21,6 +22,12 @@ class TestCase(unittest.TestCase):
         collection = ['a', 'b', 'c']
         expected = ['a', 'c']
         self.assertListEqual(expected, task.firstAndLast(collection))
+
+    def testDateDifference(self):
+        date1 = datetime.date(2020, 1, 5)
+        date2 = datetime.date(2020, 1, 3)
+        expected = 2
+        self.assertEqual(expected, task.dateDifference(date1, date2))
 
 
 if __name__ == "__main__":
