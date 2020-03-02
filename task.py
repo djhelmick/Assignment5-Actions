@@ -14,6 +14,6 @@ def firstAndLast(collection):
     return [collection[0], collection[-1]]
 
 
-def dateDifference(date1, date2):
+def dateDifference(date1: datetime, date2: datetime):
     delta = date1 - date2
     return delta.days
