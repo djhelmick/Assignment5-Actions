@@ -12,6 +12,11 @@ class TestCase(unittest.TestCase):
         expected = "failure"
         self.assertNotEqual(expected, task.firstrun())
 
+    def testArea(self):
+        pi = 3.14159265359
+        expected = pi * (4 * 4)
+        self.assertEqual(expected, task.area(4))
+
 
 if __name__ == "__main__":
     unittest.main()
