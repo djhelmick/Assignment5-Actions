@@ -17,6 +17,11 @@ class TestCase(unittest.TestCase):
         expected = pi * (4 * 4)
         self.assertEqual(expected, task.area(4))
 
+    def testFirstAndLast(self):
+        collection = ('a', 'b', 'c')
+        expected = ('a', 'c')
+        self.assertListEqual(expected, task.firstAndLast(collection))
+        
 
 if __name__ == "__main__":
     unittest.main()
