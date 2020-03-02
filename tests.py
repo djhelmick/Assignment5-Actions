@@ -18,8 +18,8 @@ class TestCase(unittest.TestCase):
         self.assertEqual(expected, task.area(4))
 
     def testFirstAndLast(self):
-        collection = ('a', 'b', 'c')
-        expected = ('a', 'c')
+        collection = ['a', 'b', 'c']
+        expected = ['a', 'c']
         self.assertListEqual(expected, task.firstAndLast(collection))
 
 
