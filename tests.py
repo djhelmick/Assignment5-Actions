@@ -21,7 +21,7 @@ class TestCase(unittest.TestCase):
         collection = ('a', 'b', 'c')
         expected = ('a', 'c')
         self.assertListEqual(expected, task.firstAndLast(collection))
-        
+
 
 if __name__ == "__main__":
     unittest.main()

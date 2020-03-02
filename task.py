@@ -1,6 +1,3 @@
-import datetime
-
-
 def firstrun():
     return "success"
 
